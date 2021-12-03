@@ -1,12 +1,10 @@
 
 interface Subject {
-    // Присоединяет наблюдателя к издателю.
     state: boolean;
+    // Присоединяет наблюдателя
     attach(observer: Observer): void;
-
-    // Отсоединяет наблюдателя от издателя.
+    // Отсоединяет наблюдателя
     detach(observer: Observer): void;
-
     // Уведомляет всех наблюдателей о событии.
     notify(): void;
 }
@@ -132,9 +130,9 @@ class Ringleader {
 /**
  *  client logic
  */
-function client(cop : boolean){
+function clients(cop : boolean){
     let ringleader = new Ringleader(cop)
     ringleader.makeBand()
     ringleader.beginHeist()
 }
-client(true)
+clients(true)

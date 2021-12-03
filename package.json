@@ -6,7 +6,8 @@
   "scripts": {
     "obsorve": "ts-node observer.ts",
     "builder": "ts-node builder.ts",
-    "factory": "ts-node Factory.ts"
+    "factory": "ts-node Factory.ts",
+    "Postal": "ts-node Postal_office.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

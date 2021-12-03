@@ -96,9 +96,9 @@ class Tetris {
         }
     }
 }
-function client(){
+function client_(): void {
     let game = new Tetris()
     game.runGame(10)
 }
 
-client()
+client_()
