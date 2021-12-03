@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "obsorve": "ts-node observer.ts",
-    "builder": "ts-node builder.ts"
+    "builder": "ts-node builder.ts",
+    "factory": "ts-node Factory.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

@@ -7,14 +7,14 @@ class BuilderTXTtoXML{
     heading : string
     authors : string []
     hash: string
-    getText(path){
+    private getText(path){
         this.originalText = fs.readFileSync(path, "utf8");
     }
-    parseHeading(){
+    private parseHeading(){
         //parse heading//
         this.heading = "heading"
     }
-    parseAuthors(){
+    private parseAuthors(){
         //parse authors//
         this.authors = [
             'author 1',
@@ -22,15 +22,15 @@ class BuilderTXTtoXML{
             '........'
         ]
     }
-    parseText(){
+    private parseText(){
         //parse text//
         this.text = "text......text"
     }
-    parseHash(){
+    private parseHash(){
         //parse Hash//
         this.hash = "hash...hash"
     }
-    createXML(){
+    private createXML(){
         let xml = [this.heading, this.authors, this.text, this.hash]
         console.log(xml)
     }
