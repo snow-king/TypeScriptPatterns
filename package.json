@@ -1,0 +1,23 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "obsorve": "ts-node observer.ts",
+    "builder": "ts-node builder.ts"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/node": "^16.11.7",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xmlbuilder": "^15.1.1"
+  }
+}
